@@ -1,0 +1,38 @@
+### react ###
+.DS_*
+.idea
+.cache
+
+### Testing ###
+/coverage
+
+### Logs ###
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Dependency directories ###
+node_modules/
+jspm_packages/
+/.pnp
+.pnp.js
+
+### Distribution directories ###
+dist
+
+### Production ###
+build/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history

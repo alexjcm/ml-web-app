@@ -10,7 +10,7 @@ ul {
 }
 
 .container #logo {
-  width: 45px;
+  width: 100px;
 }
 
 @media screen and (min-width: 768px) {

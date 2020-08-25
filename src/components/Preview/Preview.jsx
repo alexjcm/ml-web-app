@@ -1,6 +1,6 @@
-import React from "react";
-import "./Preview.css";
-import formatFileSize from "../../utils/formatFileSize";
+import React from 'react'
+import './Preview.css'
+import formatFileSize from '../../utils/formatFileSize'
 
 function Preview(props) {
   return (
@@ -17,7 +17,7 @@ function Preview(props) {
         </figcaption>
       </figure>
     </div>
-  );
+  )
 }
 
-export default Preview;
+export default Preview

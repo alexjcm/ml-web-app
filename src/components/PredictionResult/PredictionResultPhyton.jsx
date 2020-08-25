@@ -6,15 +6,14 @@ function PredictionResult({ predictions}) {
     if (predictions[0].probability > 0.5) {
       return (
         <article className="predictions">
-          <h2 className="predictions-heading">Teachable Machine Model</h2>
+          <h2 className="predictions-heading">Phyton with CNN's Model</h2>
           <h3>AJUSTES</h3>
-          <h4>Epocas = 50</h4>
-          <h4>Tamanio de Lote = 16</h4>
-          <h4>Tasa de Aprendizaje = 0,001</h4>
+          <h4>CNN´s = 1</h4>
+          <h4>Capas = 7</h4>
           <center><h3>{predictions[0].className}</h3></center>
           <div className="progress">
             <div
-              className="progress-bar"
+              className="progress-bar1"
               role="progressbar"
               style={{
                 width: `${(predictions[0].probability * 100).toFixed(2)}%`
@@ -30,7 +29,7 @@ function PredictionResult({ predictions}) {
           <center><h3>{predictions[1].className}</h3></center>
           <div className="progress">
             <div
-              className="progress-bar"
+              className="progress-bar1"
               role="progressbar"
               style={{
                 width: `${(predictions[1].probability * 100).toFixed(2)}%`
@@ -43,6 +42,7 @@ function PredictionResult({ predictions}) {
               %
             </div>
           </div>
+          <span></span>
         </article>
       )
     } else {

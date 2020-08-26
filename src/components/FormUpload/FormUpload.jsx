@@ -51,24 +51,24 @@ function FormUpload() {
 
       cargarAPI(pjson, file)
 
-      async function cargarAPI(predictionData, file){
-        var form = new FormData();
-        let cachedData = null;
-        form.append("image", file);
+      async function cargarAPI(predictionData, file) {
+        var formdata = new FormData();
+        formdata.append("image", singleFile);
 
-        fetch({
-          URL:"https://api.chooch.ai/predict/image?apikey=0e6b1e5b-8c1e-4c4f-af3f-7d31df7c7d81",
-          method: 'POST',
-          processData: false,
-          mimeType: "multipart/form-data",
-          contentType: false,
-          data: form,
-        })
-          .then(response => {
-            cachedData = response
-            setpjson(cachedData);
-            console.log(cachedData.json())
-          });        
+        var requestOptions = {
+          "url": "https://api.chooch.ai/predict/image?apikey=0e6b1e5b-8c1e-4c4f-af3f-7d31df7c7d81",
+          "method": "POST",
+          "timeout": 0,
+          "processData": false,
+          "mimeType": "multipart/form-data",
+          "contentType": false,
+          "data": formdata
+        };
+
+        const response=await fetch(requestOptions)
+        const result= await response.text()
+        setpjson(response)
+        console.log(result)
       }
 
       setLoading(false)

@@ -28,3 +28,61 @@ ul {
     margin-top: 40px;
   }
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.photo {
+  height:100px;
+  width: 75px;
+}
+
+
+/* SOCIAL STUFF */
+.social-container {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  padding: 12px 20px;
+  background-color: #f4f4f4;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.github {
+  color: black;
+}
+
+a.linkedin {
+  color: purple;
+}

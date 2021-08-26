@@ -18,9 +18,6 @@ import {
 function App() {
   return (
     <div className="container">
-      <center>
-        <img src={unl} width="300px" />
-      </center>
       <h1><strong>IMAGE CLASSIFICATION ONCOLOGY</strong></h1>
       <img src={logo} alt="Logo" id="logo" />
       <FormUpload />
